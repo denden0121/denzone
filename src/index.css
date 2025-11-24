@@ -10,18 +10,43 @@
 	margin: 0;
 }
 
-#root {
-	--brand-color: #383838;
+/* #root {
+	--brand-color: #ABC4FF;
+	--brand-color-secondary: #B6CCFE;
 
 	--primary-color: #FFFFFF;
 	--secondary-color: #888888;
 
-	--bg-color: #131313;
-	--bg-secondary: #101010;
+	--bg-primary: #ffffff;
+	--bg-secondary: #EDF2FB;
+	--bg-tertiary: #CCDBFD;
 
-	--text-primary: #FFFFFF;
+	--text-primary: #000000;
 	--text-secondary: #888888;
 	--text-tertiary: #6A6A6A;
+} */
+
+#root {
+	--brand-color: #212529;
+	--brand-color-secondary: #343a40;
+	--brand-color-tertiary: #6c757d;
+
+	--primary-color: #f8f9fa;
+	--secondary-color: #6c757d;
+
+	--bg-primary: #ffffff;
+	--bg-secondary: #e9ecef;
+	--bg-tertiary: #dee2e6;
+	--bg-tertiary: #bcbfc2;
+	--bg-dark: #000000;
+
+	--text-primary: #212529;
+	--text-secondary: #6c757d;
+	--text-tertiary: #adb5bd;
+
+	--text-reverse-primary: #ffffff;
+	--text-reverse-secondary: #e7e7e7;
+	--text-reverse-tertiary: #bbbbbb;
 }
 
 /* 3. Enable keyword animations */
