@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# | Type        | When                                |
+# | ----------- | ----------------------------------- |
+# | `feat:`     | new UI component, endpoint, feature |
+# | `fix:`      | bug or broken behavior              |
+# | `refactor:` | cleanup, reorganize code            |
+# | `style:`    | css, prettier fixes                 |
+# | `chore:`    | dependency updates, config updates  |
+# | `docs:`     | README or comments                  |
+# | `build:`    | Vite, Webpack, Node server config   |

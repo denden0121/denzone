@@ -7,13 +7,15 @@ import {
 	IconHammer,
 	IconPhone,
 } from "@tabler/icons-react";
+import Logo from "@/components/logo/Logo";
 
 const Navigation = () => {
 	return (
 		<div className="w-full flex flex-row justify-end items-center gap-2.5 p-6">
+			<Logo />
 			{/* primary nav */}
 			<div
-				className={`w-max bg-(--bg-primary) border border-(--bg-tertiary) flex flex-row justify-center align-center gap-3.5 p-2 overflow-hidden rounded-4xl ${styles.navigationMainContainer}`}
+				className={`w-max bg-(--bg-primary)  border-(--bg-tertiary) flex flex-row justify-center align-center gap-3.5 p-2 overflow-hidden rounded-4xl ${styles.navigationMainContainer}`}
 			>
 				<p>
 					HOME
