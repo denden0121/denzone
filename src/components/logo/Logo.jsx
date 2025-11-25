@@ -1,5 +1,5 @@
 import React from "react";
-import LogoImg from "@/assets/images/denzone-logo.svg";
+import LogoImg from "@/assets/images/denzone-logo-light.svg";
 
 const Logo = () => {
 	return (

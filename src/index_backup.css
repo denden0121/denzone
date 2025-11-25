@@ -1,0 +1,127 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+
+/* #root {
+	--brand-color: #ABC4FF;
+	--brand-color-secondary: #B6CCFE;
+
+	--primary-color: #FFFFFF;
+	--secondary-color: #888888;
+
+	--bg-primary: #ffffff;
+	--bg-secondary: #EDF2FB;
+	--bg-tertiary: #CCDBFD;
+
+	--text-primary: #000000;
+	--text-secondary: #888888;
+	--text-tertiary: #6A6A6A;
+} */
+
+#root {
+	--brand-color: #212529;
+	--brand-color-secondary: #343a40;
+	--brand-color-tertiary: #6c757d;
+
+	--primary-color: #f8f9fa;
+	--secondary-color: #6c757d;
+
+	--bg-primary: #000000;
+	--bg-secondary: #e9ecef;
+	--bg-tertiary: #dee2e6;
+	--bg-tertiary: #bcbfc2;
+	--bg-dark: #000000;
+
+	--text-primary: #212529;
+	--text-secondary: #6c757d;
+	--text-tertiary: #adb5bd;
+
+	--text-reverse-primary: #ffffff;
+	--text-reverse-secondary: #e7e7e7;
+	--text-reverse-tertiary: #bbbbbb;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+html,
+body,
+#root {
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* 4. Add accessible line-height */
+	line-height: 1.5;
+	/* 5. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+	/* Common in GSAP to prevent snapping */
+	font-family: Helvetica, sans-serif;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}

@@ -15,7 +15,7 @@ const Navigation = () => {
 			<Logo />
 			{/* primary nav */}
 			<div
-				className={`w-max bg-(--bg-primary)  border-(--bg-tertiary) flex flex-row justify-center align-center gap-3.5 p-2 overflow-hidden rounded-4xl ${styles.navigationMainContainer}`}
+				className={`w-max bg-(--secondary-color) border  border-(--brand-color-tertiary) flex flex-row justify-center align-center gap-3.5 p-2 overflow-hidden rounded-4xl ${styles.navigationMainContainer}`}
 			>
 				<p>
 					HOME
@@ -35,25 +35,21 @@ const Navigation = () => {
 				</p>
 			</div>
 
-			{/* secondary nav */}
+			{/* secondary nav section */}
 			<div
-				className={`w-max flex flex-row justify-center align-center gap-3.5 p-2 overflow-hidden rounded-4xl ${styles.navigationSecondaryContainer}`}
+				className={`w-max bg-(--secondary-color) border border-(--brand-color-tertiary) flex flex-row justify-center items-center p-2 overflow-hidden rounded-4xl ${styles.navigationSecondaryContainer}`}
 			>
-				<div
-					className={`w-max bg-(--bg-primary border border-(--bg-tertiary) flex flex-row justify-center items-center p-2 overflow-hidden rounded-4xl ${styles.navigationSecondaryContainer}`}
-				>
-					<p>SHOP NOW</p>
-					<span className={styles.shopBtn}>
-						<IconShoppingCartShare stroke={1} />
-					</span>
-				</div>
-				<div
-					className={`w-max bg-(--brand-color) border border-(--brand-color) flex flex-row justify-center items-center gap-2 px-2 overflow-hidden rounded-full ${styles.navigationSecondaryContainer}`}
-				>
-					<span className={styles.cartBtn}>
-						<IconShoppingBag stroke={1} />
-					</span>
-				</div>
+				<p>SHOP NOW</p>
+				<span className={styles.shopBtn}>
+					<IconShoppingCartShare stroke={1} />
+				</span>
+			</div>
+			<div
+				className={`w-max bg-(--brand-color) border border-(--brand-color-tertiary) flex flex-row justify-center items-center gap-2 px-2 overflow-hidden rounded-full ${styles.navigationSecondaryContainer}`}
+			>
+				<span className={styles.cartBtn}>
+					<IconShoppingBag stroke={1} />
+				</span>
 			</div>
 		</div>
 	);
