@@ -2,7 +2,7 @@
 	font-size: 14px;
 	font-weight: 500;
 	color: var(--text-secondary);
-	border: 1px solid transparent;
+	overflow: hidden;
 	border-radius: 38px;
 	width: max-content;
 	padding: 14px 28px;
@@ -14,17 +14,20 @@
 	justify-content: center;
 	align-items: center;
 	gap: 4px;
+
 }
 
 .navigationMainContainer p svg {
-	transition: opacity.3s ease-in-out;
+	transition: .3s ease-in;
 	color: var(--text-primary);
 	height: 18px;
 	opacity: 0;
+	transform: translateY(100%);
 }
 
 .navigationMainContainer p:hover svg {
 	opacity: 1;
+	transform: translateY(0px);
 }
 
 .navigationMainContainer p:hover {
@@ -95,15 +98,16 @@
 
 
 .navigationSecondaryContainer p:hover {
-	color: var(--text-primary);
+	color: var(--text-reverse-primary);
 }
 
 .shopBtn {
 	color: var(--text-reverse-primary);
+	color: var(--text-primary);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--brand-color);
+	background-color: var(--primary-color);
 	width: 80px;
 	height: 50px;
 	border-radius: 10px 30px 30px 10px;
