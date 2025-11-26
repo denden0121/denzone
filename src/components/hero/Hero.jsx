@@ -42,11 +42,11 @@ const Hero = () => {
 			{/* 3D SECTION */}
 			<div className="h-[50dvh] fixed w-full z-100">
 				<Canvas camera={{ position: [2, 2, 10] }}>
-					<ambientLight intensity={0.6} />
-					<directionalLight position={[5, 5, 5]} intensity={1} />
+					<ambientLight intensity={0.6} color={"blue"} />
+					<directionalLight color={"blue"} position={[5, 5, 5]} intensity={1} />
 					<Model ref={robotRef} position={[0, -1, 1]} scale={1} />
 
-					<OrbitControls enableZoom={false} enableRotate={false} />
+					<OrbitControls enableZoom={true} enableRotate={true} />
 					<Environment preset="studio" />
 				</Canvas>
 			</div>
