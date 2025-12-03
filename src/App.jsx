@@ -9,12 +9,12 @@ import Process from "./components/process/Process";
 const App = () => {
 	return (
 		<div className="app-container bg-(--bg-primary)">
-			{/* <Home /> */}
+			<Home />
 			{/* <ModelObject /> */}
 			{/* <AnimationPrototype /> */}
 			{/* <HeroPrototype /> */}
 			{/* <Features /> */}
-			<Process />
+			{/* <Process /> */}
 		</div>
 	);
 };

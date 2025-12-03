@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import styles from "./Hero.module.css";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import Model from "@/components/hero_model/HeroModel";
@@ -31,20 +32,25 @@ const Hero = () => {
 	}, []); // FIX: run once after mount
 
 	return (
-		<div className="h-[200dvh] relative border border-zinc-900 flex flex-col items-center py-12">
+		<div className="h-[200dvh] relative bg-[#060507] border-zinc-900 flex flex-col items-center py-12">
 			<h1 className="text-(--text-primary) text-7xl font-bold z-10">
-				MEET YOUR NEW MACHINE
+				{/* MEET YOUR NEW MACHINE */}
 			</h1>
 			<h4 className="text-(--text-primary) text-2xl font-light z-10">
-				Robots engineered to think, move, and work like nothing before.
+				{/* Robots engineered to think, move, and work like nothing before. */}
 			</h4>
 
 			{/* 3D SECTION */}
-			<div className="h-[50dvh] fixed w-full z-100">
-				<Canvas camera={{ position: [2, 2, 10] }}>
-					<ambientLight intensity={0.6} color={"blue"} />
-					<directionalLight color={"blue"} position={[5, 5, 5]} intensity={1} />
-					<Model ref={robotRef} position={[0, -1, 1]} scale={1} />
+			<div className="h-full top-0 fixed w-full z-100 border-green-600">
+				<span className={styles.modelBackground}></span>
+				<Canvas camera={{ position: [2, 0, 1] }}>
+					<ambientLight intensity={10} color={"black"} />
+					<directionalLight
+						color={"black"}
+						position={[5, 5, 5]}
+						intensity={10}
+					/>
+					<Model ref={robotRef} position={[0, 0, 0]} scale={1.7} />
 
 					<OrbitControls enableZoom={true} enableRotate={true} />
 					<Environment preset="studio" />

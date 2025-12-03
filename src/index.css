@@ -26,7 +26,7 @@
 	--text-tertiary: #6A6A6A;
 } */
 
-#root {
+/* #root {
 	--brand-color: #212529;
 	--brand-color-secondary: #343a40;
 	--brand-color-tertiary: #6c757d;
@@ -47,14 +47,39 @@
 	--text-reverse-primary: #ffffff;
 	--text-reverse-secondary: #e7e7e7;
 	--text-reverse-tertiary: #bbbbbb;
+} */
+#root {
+	--brand-color: #212529;
+	--brand-color-secondary: #343a40;
+	--brand-color-tertiary: #6c757d;
+
+	--primary-color: #f8f9fa;
+	--secondary-color: #6c757d;
+
+	--bg-primary: #fafafa;
+	--bg-primary: #fafafa;
+	--bg-secondary: #DFEAF6;
+	--bg-secondary: #e9ecef;
+	--bg-tertiary: #dee2e6;
+	--bg-tertiary: #bcbfc2;
+	--bg-dark: #000000;
+
+	--text-primary: #212529;
+	--text-secondary: #6c757d;
+	--text-tertiary: #adb5bd;
+
+	--text-reverse-primary: #ffffff;
+	--text-reverse-secondary: #e7e7e7;
+	--text-reverse-tertiary: #bbbbbb;
 }
 
+*/
 /* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
 	html {
 		interpolate-size: allow-keywords;
 	}
-}
+} */
 
 html,
 body,

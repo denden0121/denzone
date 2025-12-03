@@ -3,7 +3,9 @@ import { useGLTF } from "@react-three/drei";
 
 const HeroModel = forwardRef(({ position, scale }, ref) => {
 	const modelRef = useRef();
-	const { scene } = useGLTF("/models/robot_cln-r_school_project.glb");
+	const { scene } = useGLTF("/models/motor_helmet.glb");
+	// const { scene } = useGLTF("/models/2018_lotus_evora_gt430.glb");
+	// const { scene } = useGLTF("/models/suzuki_gsx_750_bike_3d_model.glb");
 
 	// Expose API to parent
 	useImperativeHandle(ref, () => ({

@@ -76,6 +76,7 @@ const HeroPrototype = () => {
 					trigger: heroSectionRef.current,
 					start: "center center",
 					end: "center top",
+					markers: true,
 					scrub: 1,
 					pin: false,
 				},
@@ -96,7 +97,7 @@ const HeroPrototype = () => {
 			>
 				<h1
 					ref={headerRef}
-					className="header  text-(--text-primary) text-7xl text-center font-bold z-10"
+					className="header  text-(--text-primary) text-8xl text-center font-bold z-10"
 				>
 					MEET YOUR NEW MACHINE
 				</h1>

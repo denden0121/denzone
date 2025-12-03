@@ -11,10 +11,10 @@ import Logo from "@/components/logo/Logo";
 
 const Navigation = () => {
 	return (
-		<div className="w-full flex flex-row justify-end items-center gap-2.5 p-6">
+		<div className="z-[2000] w-full flex flex-row justify-end items-center gap-2.5 px-6 py-1">
 			<Logo />
 			{/* primary nav */}
-			<div
+			{/* <div
 				className={`w-max bg-(--bg-primary)  border-(--bg-secondary)  flex flex-row justify-center align-center gap-3.5 p-2 overflow-hidden rounded-4xl ${styles.navigationMainContainer}`}
 			>
 				<p>
@@ -33,11 +33,11 @@ const Navigation = () => {
 					CONTACT
 					<IconPhone stroke={1} />
 				</p>
-			</div>
+			</div> */}
 
 			{/* secondary nav section */}
 			<div
-				className={`w-max bg-(--brand-color) border border-(--bg-secondary)  flex flex-row justify-center items-center p-2 overflow-hidden rounded-4xl ${styles.navigationSecondaryContainer}`}
+				className={`w-max bg-(--brand-color) border border-(--bg-secondary)  flex flex-row justify-center items-center px-2 overflow-hidden rounded-4xl ${styles.navigationSecondaryContainer}`}
 			>
 				<p>SHOP NOW</p>
 				<span className={styles.shopBtn}>

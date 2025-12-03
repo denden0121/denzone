@@ -1,10 +1,10 @@
 import React from "react";
-import LogoImg from "@/assets/images/denzone-logo.svg";
+import LogoImg from "@/assets/images/luxshield-logo.svg";
 
 const Logo = () => {
 	return (
-		<div className="justify-self-start cursor-pointer absolute left-10">
-			<img src={LogoImg} className="w-36" />
+		<div className="z-[500] justify-self-start cursor-pointer absolute left-10">
+			<img src={LogoImg} className="w-36 " />
 			{/* <svg
 				width="58"
 				height="34"
